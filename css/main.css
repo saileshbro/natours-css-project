@@ -34,14 +34,14 @@ body {
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
+.header__logo {
+  height: 3.5rem;
+}
+
 .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
-}
-
-.header__logo {
-  height: 3.5rem;
 }
 
 .header__text-box {
@@ -175,8 +175,7 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4.0rem;
@@ -195,6 +194,12 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover::after {
+  -webkit-transform: scaleX(1.5) scaleY(1.6);
+          transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
 .btn:active {
   -webkit-transform: translateY(-0.1rem);
           transform: translateY(-0.1rem);
@@ -203,8 +208,12 @@ body {
 }
 
 .btn--white {
-  background: white;
-  color: #777777;
+  background: #fff;
+  color: #777;
+}
+
+.btn--white::after {
+  background: #fff;
 }
 
 .btn::after {
@@ -219,16 +228,6 @@ body {
   z-index: -1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-}
-
-.btn--white::after {
-  background: white;
-}
-
-.btn.btn:hover::after {
-  -webkit-transform: scaleX(1.5) scaleY(1.6);
-          transform: scaleX(1.5) scaleY(1.6);
-  opacity: 0;
 }
 
 .btn--animated {
