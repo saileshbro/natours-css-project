@@ -814,6 +814,64 @@ body {
   opacity: 1;
 }
 
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+}
+
+.popup__content {
+  width: 75%;
+  background: #fff;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+}
+
+.popup__left {
+  width: 33.3333333%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.popup__right {
+  width: 66.6666666667%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+
+.popup__img {
+  display: block;
+  width: 100%;
+}
+
+.popup__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  -webkit-column-rule: 1px solid #eee;
+          column-rule: 1px solid #eee;
+  -webkit-hyphens: auto;
+  -o-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/hero.jpg");
