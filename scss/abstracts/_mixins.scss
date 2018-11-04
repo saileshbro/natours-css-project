@@ -22,6 +22,8 @@
 {1200-1800} is where our normal styles apply
 1800+:          Big desktop
 1em = 16px
+
+ORDER: base > typography > general layout > grid  > page layout > components
 */
 @mixin respond($breakpoint){
     @if $breakpoint == phone {

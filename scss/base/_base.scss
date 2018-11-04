@@ -26,4 +26,7 @@ body {
     color: $color-grey-dark;
     padding: 3rem;
     box-sizing: border-box;
-}
+    @include respond(tab-port){
+        padding: 0 !important;
+    }
+} 

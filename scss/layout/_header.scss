@@ -8,9 +8,9 @@
     position: relative;
 
     clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
-    -webkit-clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
-    -moz-clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
-    -o-clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
+    @include respond(phone){
+        clip-path: polygon(0 0,100% 0, 100% 85vh,0 100%);
+    }
     &__logo{
         height: 3.5rem;
         &-box{
