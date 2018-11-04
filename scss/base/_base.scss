@@ -7,6 +7,17 @@
 }
 html{
     font-size: 62.5%;
+    // 1rem = 10px
+
+    @include respond(tab-land){ //width<900
+        font-size:  56.25%; //1rem = 9px; 
+    }
+    @include respond(tab-port){//width less than 600
+        font-size:  50%; //1 rem = 8 px; 50% = 8 px;
+    }
+    @include respond(big-desktop){
+        font-size: 75%; //1rem =12px 12/16 =75%
+    }
 }
 body {
     font-family: "Lato",sans-serif;
