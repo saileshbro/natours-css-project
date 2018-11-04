@@ -1216,8 +1216,8 @@ body {
 
 @media (max-width: 56.25em) {
   .navigation__button {
-    top: 4rem;
-    right: 4rem;
+    top: 4.5rem;
+    right: 4.5rem;
   }
 }
 
@@ -1245,15 +1245,15 @@ body {
 
 @media (max-width: 56.25em) {
   .navigation__background {
-    top: 4.5rem;
-    right: 4.5rem;
+    top: 5rem;
+    right: 5rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .navigation__background {
-    top: 3rem;
-    right: 3rem;
+    top: 3.5rem;
+    right: 3.5rem;
   }
 }
 
